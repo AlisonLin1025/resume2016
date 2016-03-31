@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#main{
+    width: 640px;
+    height: 960px;
+    position: absolute;
+    left: 50%;
+    margin-left: -320px;
+    top: 0;
+    -webkit-transform-origin: top;
+}
+.slide li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.zIndex{
+    z-index: 11;
+}
+.slide li:nth-child(1){
+    background: url(images/image01.gif) no-repeat;
+}
+.slide li:nth-child(2){
+    background: url(images/image02.jpg) no-repeat;
+}
+.slide li:nth-child(3){
+    background: url(images/image03.jpg) no-repeat;
+}
+.slide li:nth-child(4){
+    background: url(images/image04.jpg) no-repeat;
+}
+.slide li:nth-child(5){
+    background: url(images/image05.jpg) no-repeat;
+}
+.slide li:nth-child(6){
+    background: url(images/image06.jpg) no-repeat;
+}
+.slide li:nth-child(7){
+    background: url(images/image07.jpg) no-repeat;
+}
+.slide li:nth-child(8){
+    background: url(images/image08.jpg) no-repeat;
+}
+/*第一屏 开始*/
+.a1 img{
+    width: 258px;
+    height: 258px;
+    animation: fadeInOne 1s ease 0.2s 1 both;
+}
+@keyframes fadeInOne {
+    0%{
+        -webkit-transform: translate(0,0);
+        opacity: 0;
+    }
+    100%{
+        -webkit-transform: translate(180px,100px);
+        opacity: 1;
+    }
+}
+/*第一屏 结束*/
+/*第二屏 开始*/
+.a2 .top{
+    position: absolute;
+    width: 75%;
+    height: 162px;
+    background-color: rgba(100,100,100,.3);
+    float: left;
+    left: 78px;
+    top: 38px;
+}
+.topL{
+    width: 197px;
+    height: 36px;
+    color: #ffffff;
+    float: left;
+}
+.topL h3{
+    position: absolute;
+    width: 197px;
+    height: 36px;
+    left: 70px;
+    top: 35px;
+    z-index: 2;
+    font-size: 35px;
+}
+.topL p{
+    width: 210px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    bottom: 22px;
+    left: 30px;
+}
+.topR{
+    float: left;
+}
+.topR img{
+    width: 138px;
+    height: 162px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.bottom{
+    color: #ffffff;
+    position: absolute;
+    top: 200px;
+    left: 110px;
+    font-size: 24px;
+    margin-top: 30px;
+}
+.bottom p{
+    width: 100%;
+    height: 36px;
+    padding: .5em 18px;
+    line-height: 36px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+/*第二屏 结束*/
+/*第三屏 开始*/
+.a3 .circle1,.a3 .circle2,.a3 .circle3,.a3 .circle4,.a3 .circle5{
+    width: 50px;
+    height: 50px;
+}
+.circle1 img,.line1 img,.circle2 img,.line2 img,.circle3 img,.line3 img,.circle4 img,.line4 img,.circle5 img{
+    position: absolute;
+}
+.circle1 img{
+    left: 193px;
+    top: 66px;
+}
+.line1 img{
+    width: 155px;
+    height: 155px;
+
+    left: 251px;
+    top: 120px;
+}
+.circle2 img{
+
+    right: 180px;
+    top: 229px;
+}
+.line2 img{
+    width: 155px;
+    height: 155px;
+
+    left: 251px;
+    top: 285px;
+}
+.circle3 img{
+
+    left: 195px;
+    top: 392px;
+}
+.line3 img{
+    width: 155px;
+    height: 155px;
+
+    left: 251px;
+    top: 447px;
+}
+.circle4 img{
+
+    right: 185px;
+    top: 551px;
+}
+.line4 img{
+    width: 155px;
+    height: 155px;
+
+    left: 251px;
+    top: 602px;
+}
+.circle5 img{
+
+    left: 195px;
+    top: 709px;
+}
+.a3 p{
+    color: #ffffff;
+    font-size: 28px;
+    width: 44%;
+}
+.a3 p:nth-of-type(1),.a3 p:nth-of-type(2),.a3 p:nth-of-type(3),.a3 p:nth-of-type(4){
+    position: absolute;
+}
+.a3 p:nth-of-type(1){
+    right: 0;
+    top: 142px;
+    font-size: 36px;
+}
+.a3 p:nth-of-type(2){
+    left: 53px;
+    top: 254px;
+    text-align: center;
+    line-height: 36px;
+}
+.a3 p:nth-of-type(3){
+    right: 53px;
+    top: 422px;
+    text-align: center;
+    line-height: 36px;
+}
+.a3 p:nth-of-type(4){
+    left: 53px;
+    top: 585px;
+    text-align: center;
+    line-height: 36px;
+}
+/*第三屏 结束*/
+/*第四屏 开始*/
+.a4{
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+}
+.a4 h3{
+    font-size: 40px;
+    margin-top: 50px;
+}
+/*第四屏 结束*/
+/*第五屏 开始*/
+.a5{
+    width: 100%;
+    text-align: center;
+}
+.a5 h3{
+    font-size: 40px;
+    color: #000;
+    transform: rotate(45deg) translate(254px,66px);
+}
+/*第五屏 结束*/
+/*第六屏 开始*/
+.a6 h3{
+    color: #ff0;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 98px;
+    letter-spacing: 5px;
+}
+/*第六屏 结束*/
+/*第七屏 开始*/
+.a7{
+    width: 100%;
+    text-align: center;
+}
+.a7 p{
+    font-family: hanyi_ngt;
+    font-weight: bold;
+    color: rgb(204, 204, 204);
+    font-size: 34px;
+}
+.a7 p:nth-of-type(1){
+    margin-top: 460px;
+}
+.a7 p:nth-of-type(2){
+    margin-top: 20px;
+}
+.a7 p span{
+    line-height: inherit;
+    background-color: initial;
+    letter-spacing: 3px;
+}
+.a7 p:nth-of-type(3){
+    margin-top: 240px;
+}
+.a7 p:nth-of-type(3) span{
+     font-size: 24px;
+     font-family: fangzheng_glt;
+     letter-spacing: 3px;
+}
+.a7 p:nth-of-type(3) span:nth-of-type(2){
+    font-size: 22px;
+    font-family: hanyi_ngt;
+}
+.a7 p:nth-of-type(4) span,.a7 p:nth-of-type(5) span{
+    font-family: hanyi_ngt;
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+/*第七屏 结束*/
+/*第八屏 开始*/
+.a8{
+    text-align: center;
+}
+.a8 h3{
+    font-size: 60px;
+    color: #000;
+    transform: translateY(157px);
+}
+/*第八屏 结束*/
