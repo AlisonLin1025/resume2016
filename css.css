@@ -55,11 +55,11 @@ html,body{
 }
 /*第一屏 开始*/
 .a1 img{
-    width: 258px;
-    height: 258px;
-    animation: fadeInOne 1s ease 0.2s 1 both;
+    -width: 258px;
+    -height: 258px;
+    animation: fadeInLeft 1s ease 0.2s 1 both;
 }
-@keyframes fadeInOne {
+/*@keyframes fadeInOne {
     0%{
         -webkit-transform: translate(0,0);
         opacity: 0;
@@ -68,6 +68,38 @@ html,body{
         -webkit-transform: translate(180px,100px);
         opacity: 1;
     }
+}*/
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%,0,0);
+        transform: translate3d(-100%,0,0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%,0,0);
+        transform: translate3d(-100%,0,0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft
 }
 /*第一屏 结束*/
 /*第二屏 开始*/
