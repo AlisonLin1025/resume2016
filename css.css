@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-ul{
+ul,li{
     list-style: none;
 }
 html,body{
@@ -53,22 +53,17 @@ html,body{
 .slide li:nth-child(8){
     background: url(images/image08.jpg) no-repeat;
 }
+.wh100{
+    width: 100%;
+    height: 100%;
+}
+.center{
+    text-align: center;
+}
 /*第一屏 开始*/
 .a1 img{
-    -width: 258px;
-    -height: 258px;
     animation: fadeInLeft 1s ease 0.2s 1 both;
 }
-/*@keyframes fadeInOne {
-    0%{
-        -webkit-transform: translate(0,0);
-        opacity: 0;
-    }
-    100%{
-        -webkit-transform: translate(180px,100px);
-        opacity: 1;
-    }
-}*/
 @-webkit-keyframes fadeInLeft {
     0% {
         opacity: 0;
@@ -104,68 +99,511 @@ html,body{
 /*第一屏 结束*/
 /*第二屏 开始*/
 .a2 .top{
-    position: absolute;
     width: 75%;
     height: 162px;
     background-color: rgba(100,100,100,.3);
-    float: left;
-    left: 78px;
-    top: 38px;
+    margin-left: 20px;
+    margin-top: 50px;
+    position: relative;
 }
-.topL{
-    width: 197px;
-    height: 36px;
-    color: #ffffff;
-    float: left;
-}
-.topL h3{
-    position: absolute;
-    width: 197px;
-    height: 36px;
-    left: 70px;
-    top: 35px;
-    z-index: 2;
-    font-size: 35px;
-}
-.topL p{
-    width: 210px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    font-size: 24px;
-    background-color: rgba(255, 255, 255, 0.2);
-    position: absolute;
-    bottom: 22px;
-    left: 30px;
-}
-.topR{
-    float: left;
-}
-.topR img{
-    width: 138px;
-    height: 162px;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-}
-.bottom{
-    color: #ffffff;
-    position: absolute;
-    top: 200px;
-    left: 110px;
-    font-size: 24px;
-    margin-top: 30px;
-}
-.bottom p{
+.a2 .left{
+    top: 32px;
+    left: 13px;
+    z-index: 1;
     width: 100%;
+    height: 100%;
+    opacity: 1;
+    color: rgb(103, 103, 103);
+    border: 0px solid rgb(0, 0, 0);
+    padding-bottom: 0px;
+    padding-top: 0px;
+    line-height: 1;
+    border-radius: 0px;
+    transform: none;
+    box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 0px;
+    animation: fadeInDown 0.6s ease 0.2s 1 both;
+}
+.a2 .left img{
+    width: 149px;
+    height: 162px;
+    margin-left: 450px;
+}
+.a2 .rightT{
+    width: 197px;
     height: 36px;
-    padding: .5em 18px;
-    line-height: 36px;
-    margin-bottom: 10px;
+    z-index: 2;
+    transform: rotateZ(0deg);
+}
+.a2 .rightT .rightTt{
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 0px;
+    animation: fadeIn 1s ease 0.8s 1 both;
+}
+.rightT .inner{
+    cursor: default;
+    width: 197px;
+    height: 36px;
+}
+.rightT .inner .fontN{
+    line-height: 16px;
+    font-weight: bold;
+    font-size: 32px;
+    position: absolute;
+    left: 87px;
+    top: -116px;
+}
+.a2 .rightB{
+    width: 180px;
+    height: 53px;
+    z-index: 3;
+    transform: rotateZ(0deg);
+    position: absolute;
+    left: 56px;
+    bottom: 20px;
+}
+.a2 .rightB .rightBo{
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    line-height: 0.4;
+    box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 3px;
+    animation: zoomIn 1s ease 0.8s 1 both;
     background-color: rgba(255, 255, 255, 0.2);
+}
+.a2 .rightB .rightBi{
+    cursor: default;
+    width: 180px;
+    height: 53px;
+}
+.rightBi .telNum{
+    color: inherit;
+    line-height: 53px;
+    font-size: 24px;
+    background-color: initial;
+}
+.a2 .bottom1{
+    width: 80%;
+    height: 50px;
+    z-index: 6;
+    margin: 30px 0 20px 64px;
+}
+.a2 .bottom1 .outer,.a2 .bottom2 .outer,.a2 .bottom3 .outer,.a2 .bottom4 .outer,.a2 .bottom5 .outer,.a2 .bottom6 .outer,.a2 .bottom7 .outer{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    border: 0px solid rgb(0, 0, 0);
+    line-height: 0.6;
+    box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.a2 .bottom1 .outer{
+    z-index: 6;
+    animation: fadeIn 1s ease 1s 1 both;
+}
+.a2 .bottom2,.a2 .bottom3,.a2 .bottom4,.a2 .bottom5,.a2 .bottom6,.a2 .bottom7{
+    width: 80%;
+    height: 50px;
+    margin: 0 0 20px 64px;
+}
+.a2 .bottom2 .outer{
+    z-index: 11;
+    animation: fadeIn 1s ease 1.2s 1 both;
+}
+
+.a2 .bottom3 .outer{
+    z-index: 12;
+    animation: fadeIn 1s ease 1.6s 1 both;
+}
+
+.a2 .bottom4 .outer{
+    z-index: 10;
+    animation: fadeIn 1s ease 1.8s 1 both;
+}
+.a2 .bottom5 .outer{
+    z-index: 7;
+    animation: fadeIn 1s ease 2s 1 both;
+}
+.a2 .bottom6 .outer{
+    z-index: 8;
+    animation: fadeIn 1s ease 2.2s 1 both;
+}
+.a2 .bottom7 .outer{
+    z-index: 9;
+    animation: fadeIn 1s ease 2.4s 1 both;
+}
+.sameStyle{
+    font-size: 24px;
+    line-height: 52px;
+    margin-left: 20px;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,-100%,0);
+        transform: translate3d(0,-100%,0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,-100%,0);
+        -ms-transform: translate3d(0,-100%,0);
+        transform: translate3d(0,-100%,0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown
+}
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn
+}
+@-webkit-keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3,.3,.3);
+        transform: scale3d(.3,.3,.3)
+    }
+
+    50% {
+        opacity: 1
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3,.3,.3);
+        transform: scale3d(.3,.3,.3)
+    }
+
+    50% {
+        opacity: 1
+    }
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn
 }
 /*第二屏 结束*/
 /*第三屏 开始*/
+.a3 .circle1{
+    width: 150px;
+    height: 150px;
+    z-index: 3;
+    margin: 50px 0px 0px 190px;
+}
+.a3 .circle1 .circle1O{
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    transform: none;
+    animation: fadeIn 0.6s ease 0.4s both;
+}
+.circle1img{
+    margin-top: 17px;
+}
+.a3 .line1{
+    width: 170px;
+    height: 170px;
+    left: 113px;
+    top: 40px;
+    z-index: 4;
+    margin-left: 247px;
+    margin-top: -79px;
+}
+.a3 .line1 .line1O{
+    z-index: 4;
+    height: 100%;
+    width: 100%;
+    left: 113px;
+    top: 40px;
+    transform: none;
+    animation: fadeIn 0.6s ease 0.6s both;
+}
+.line1img{
+    width: 170px;
+    height: 170px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.a3 .title{
+    width: 300px;
+    height: 100px;
+    margin-left: 347px;
+    margin-top: -175px;
+    z-index: 9;
+    transform: rotateZ(0deg);
+}
+.a3 .titleO{
+    height: 100%;
+    z-index: 9;
+    width: 100%;
+    left: 125px;
+    top: 6px;
+    opacity: 1;
+    color: rgb(103, 103, 103);
+    line-height: 1;
+    box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 0px;
+    animation: fadeInRight 1s ease 0.4s both;
+}
+.a3 .titleI{
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    line-height: 100px;
+    background-color: initial;
+}
+.a3 .circle2{
+    width: 150px;
+    height: 150px;
+    z-index: 14;
+    margin: 25px 0px 0px 367px;
+}
+.a3 .circle2 .circle2O{
+    z-index: 14;
+    height: 100%;
+    width: 100%;
+    animation: fadeIn 0.6s ease 0.8s both;
+}
+.a3 .line2{
+    width: 180px;
+    height: 180px;
+    left: 107px;
+    top: 123px;
+    z-index: 1;
+    margin-left: 240px;
+    margin-top: -105px;
+}
+.a3 .line2 .line2O{
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    left: 107px;
+    top: 123px;
+    transform: none;
+    animation: fadeIn 0.6s ease 1s both;
+}
+.line2img{
+    width: 180px;
+    height: 180px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.a3 .circle3{
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+    margin: -44px 0px 0px 185px;
+}
+.a3 .circle3 .circle3O{
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    animation: fadeIn 0.6s ease 0.8s both;
+}
+.circle3img{
+    margin-top: -14px;
+}
+.a3 .experience1{
+    z-index: 10;
+    margin-top: -302px;
+    margin-left: -155px;
+}
+.a3 .experience1O{
+    height: 100%;
+    z-index: 10;
+    width: 100%;
+    opacity: 1;
+    color: rgb(103, 103, 103);
+    line-height: 1;
+    box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 0px;
+    animation: fadeInLeft 1s ease 0.8s both;
+}
+.a3 .content{
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    line-height: 34px;
+}
+.a3 .line3{
+    width: 170px;
+    height: 170px;
+    z-index: 5;
+    margin-left: 237px;
+    margin-top: 120px;
+}
+.a3 .line3 .line3O{
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    animation: fadeIn 0.6s ease 1.4s both;
+}
+.line3img{
+    width: 170px;
+    height: 170px;
+    margin-top: -2px;
+}
+.a3 .experience2{
+    z-index: 11;
+    margin-top: -206px;
+    margin-left: 237px;
+}
+.a3 .experience2O{
+    height: 100%;
+    z-index: 11;
+    width: 100%;
+    opacity: 1;
+    color: rgb(103, 103, 103);
+    line-height: 1;
+    box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 0px;
+    animation: fadeInRight 1s ease 1.2s both;
+}
+.a3 .circle4{
+    width: 150px;
+    height: 150px;
+    z-index: 6;
+    margin: 90px 0px 0px 360px;
+}
+.a3 .circle4 .circle3O{
+    z-index: 6;
+    height: 100%;
+    width: 100%;
+    animation: fadeIn 0.6s ease 1.6s both;
+}
+.a3 .line4{
+    width: 180px;
+    height: 180px;
+    z-index: 7;
+    margin-left: 235px;
+    margin-top: -105px;
+}
+.a3 .line4 .line4O{
+    z-index: 7;
+    height: 100%;
+    width: 100%;
+    animation: fadeIn 0.6s ease 1.8s both;
+}
+.line4img{
+    width: 180px;
+    height: 180px;
+}
+.a3 .circle5{
+    width: 150px;
+    height: 150px;
+    z-index: 8;
+    margin: -45px 0px 0px 181px;
+}
+.a3 .circle5 .circle5O{
+    z-index: 8;
+    height: 100%;
+    width: 100%;
+    animation: fadeIn 0.6s ease 2s both;
+}
+.a3 .experience3{
+    z-index: 12;
+    margin-top: -291px;
+    margin-left: -172px;
+}
+.a3 .experience3O{
+    height: 100%;
+    z-index: 12;
+    width: 100%;
+    opacity: 1;
+    color: rgb(103, 103, 103);
+    line-height: 1;
+    box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 0px;
+    animation: fadeInLeft 1s ease 1.6s both;
+}
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(100%,0,0);
+        transform: translate3d(100%,0,0)
+    }
+
+    100% {
+        opacity: 1;
+        transform: none
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(100%,0,0);
+        transform: translate3d(100%,0,0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight
+}
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,100%,0);
+        transform: translate3d(0,100%,0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+/*
 .a3 .circle1,.a3 .circle2,.a3 .circle3,.a3 .circle4,.a3 .circle5{
     width: 50px;
     height: 50px;
@@ -255,7 +693,8 @@ html,body{
     top: 585px;
     text-align: center;
     line-height: 36px;
-}
+}*/
+
 /*第三屏 结束*/
 /*第四屏 开始*/
 .a4{
