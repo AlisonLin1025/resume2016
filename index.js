@@ -11,6 +11,26 @@ main.style.webkitTransform="scale("+winH/desH+")";
     arguments[0].addEventListener("touchmove",move,false);
     arguments[0].addEventListener("touchend",end,false);
 });
+var arr= ['circle.png', 'image01.gif', 'image02.jpg', 'image03.jpg', 'image04.jpg', 'image05.jpg', 'image06.jpg','image07.jpg','image08.jpg','line1.png','line2.png','person.jpg','word.svg']
+fnLoad();
+function fnLoad(){
+    for(var i = 0;i<arr.length;i++){
+        var oImg = new Image();
+        oImg.src = "images/"+arr[num];
+        oImg.onload = function(){
+            num++;
+            pSpan.style.width = num/(arr.length)*100+"%";
+        }
+        pSpan.addEventListener('webkitTransitionEnd',function(){
+            if(num ==13&&loading){
+                loading.parentNode.removeChild(loading);
+                loading=null;
+            }
+
+        },false)
+
+    }
+}
 function start(e){
     this.start=e.changedTouches[0].pageY;
 }
