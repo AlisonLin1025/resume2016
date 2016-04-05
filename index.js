@@ -1,5 +1,10 @@
-var main=document.querySelector("#main");
-var oLis=document.querySelectorAll(".slide>li");
+function getEle(ele){
+    return document.querySelector(ele)
+}
+var main=getEle("#main");
+var oLis=getEle(".slide>li");
+var loading = getEle('#loading');
+var pSpan = getEle('.pSpan');
 var winW=document.documentElement.clientWidth;
 var winH=document.documentElement.clientHeight;
 var desW=640;
@@ -11,6 +16,28 @@ main.style.webkitTransform="scale("+winH/desH+")";
     arguments[0].addEventListener("touchmove",move,false);
     arguments[0].addEventListener("touchend",end,false);
 });
+var arr= ['c1.png','c2.png','c3.png','c4.png','c5.png','c6.png', 'circle.png', 'image01.gif', 'image02.jpg', 'image03.jpg', 'image04.jpg', 'image05.jpg', 'image06.jpg','image07.jpg', 'image08.jpg', 'line1.png', 'line2.png', 'person.jpg', 'word.svg'];
+var num = 0;
+fnLoad();
+function fnLoad(){
+    for(var i = 0;i<arr.length;i++){
+        var oImg = new Image();
+        oImg.src = "images/"+arr[num];
+        oImg.onload = function(){
+            num++;
+            pSpan.style.width = num/(arr.length)*100+"%";
+        }
+        pSpan.addEventListener('webkitTransitionEnd',function(){
+            if(num ==19&&loading){
+                loading.parentNode.removeChild(loading);
+                loading=null;
+            }
+
+        },false)
+
+    }
+}
+
 function start(e){
     this.start=e.changedTouches[0].pageY;
 }
