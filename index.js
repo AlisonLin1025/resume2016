@@ -1,10 +1,8 @@
-function getEle(ele){
-    return document.querySelector(ele)
-}
-var main=getEle("#main");
-var oLis=getEle(".slide>li");
-var loading = getEle('#loading');
-var pSpan = getEle('.pSpan');
+
+var main=document.querySelector("#main");
+var oLis=document.querySelectorAll(".slide>li");
+var loading = document.querySelectorAll('#loading');
+var pSpan = document.querySelectorAll('.pSpan');
 var winW=document.documentElement.clientWidth;
 var winH=document.documentElement.clientHeight;
 var desW=640;
@@ -34,7 +32,6 @@ function fnLoad(){
             }
 
         },false)
-
     }
 }
 
