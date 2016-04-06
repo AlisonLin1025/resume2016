@@ -838,8 +838,8 @@ html,body{
 }
 .evaluation1{
     z-index: 1;
-    width: 35%;
-    margin-left: 70px;
+    width: 38%;
+    margin-left: 30px;
     margin-top: -281px;
 }
 .evaluation1O{
@@ -859,7 +859,7 @@ html,body{
 .evaluation2{
     z-index: 1;
     width: 30%;
-    margin: -46px 0px 0px 370px;
+    margin: 62px 0px 0px 400px;
 }
 .evaluation2O{
     z-index: 1;
@@ -1095,7 +1095,7 @@ html,body{
     height: 100%;
     line-height: 1;
     transform: none;
-    animation: twisterInUp 2s ease 1s 1 both;
+    animation: twisterInUp 1s ease 1s 1 both;
 }
 .thanksI{
     line-height: 300px;
@@ -1104,7 +1104,7 @@ html,body{
     color: #000;
     line-height: inherit;
     font-weight: bold;
-    font-size: 34px
+    font-size: 46px
 }
 .twisterInUp {
     -webkit-animation-name: twisterInUp;
