@@ -458,7 +458,7 @@ html,body{
     width: 150px;
     height: 150px;
     z-index: 14;
-    margin: 25px 0px 0px 367px;
+    margin: -52px 0px 0px 367px;
 }
 .a3 .circle2 .circle2O{
     z-index: 14;
@@ -494,7 +494,7 @@ html,body{
     width: 150px;
     height: 150px;
     z-index: 2;
-    margin: -44px 0px 0px 185px;
+    margin: -48px 0px 0px 188px;
 }
 .a3 .circle3 .circle3O{
     z-index: 2;
@@ -530,7 +530,7 @@ html,body{
     height: 170px;
     z-index: 5;
     margin-left: 237px;
-    margin-top: 120px;
+    margin-top: 161px;
 }
 .a3 .line3 .line3O{
     z-index: 5;
